@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="K.Sasikalyan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us-Algebra</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="aboutheader">
+            <div class="container">
+                <h1 class="logo">Community</h1>
+               <div class="new-txt">
+                    <h4><span class="auto-type"></span></h4>
+                </div>    
+            </div>
+        </section>
+        <section id="community">
+            <h3>About us</h3>
+            <p>Open source is about collaborating, not competing. Science took this whole notion of developing ideas in the open and improving on other peoples' ideas. It made science what it is today and made the incredible advances that we have had possible.
+            When we have welcoming communities of contributors, Open source software gets better and more useful to everyone.
+            The changes that technology has brought in our lives are saving time, enabling instant communication and interaction, a better quality of life, easy access to information, and ensuring safety. The latest invention to help humankind is considering the changes in the environment. We are building a set of products to make the people connect together and share their views and ideas to change the future Technology & Innovation. Our Slogan, Not creating a Space. But, building a Home!. Let's Connect People.</p>
+        </section>
+        <section class="contributors">
+            <h3>Contributors</h3>
+            <ul>
+                <!--<li><img src="images/12345.jpg" width="150px" height="150px"></li>
+                <li><img src="images/12345.jpg" width="150px" height="150px"></li>
+                <li><img src="images/12345.jpg" width="150px" height="150px"></li>
+                <li><a href="">Radhika - Collaborator</a></li>-->
+                <li><a href="">Sasikalyan - Author</a></li>
+            </ul>
+        </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="spaces.html">SPACES</a></li>
+                <li><a href="https://joinspaceline-algebra.netlify.app/">SPACELINE</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">COMMUNITY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">CONTRIBUTE</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menuBtn">
+        
+        <section id="footer">
+            <ul>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">ABOUT</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">JOIN COMMUNITY</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">CONTRIBUTE</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">SPACES</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">JUST ASK</a></li>
+                <li><a href="https://github.com/KanakamSasikalyan/Algebra">FAQ</a></li>
+            </ul>
+            <p>© Copyright 2022 Algebra <a href="https://github.com/KanakamSasikalyan/Algebra">Sasikalyan</a></p>
+        </section>
+    </body>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Loading . . .","Not creating a Space", "But building a Home!","In real open source, you have the right to control your own destiny.","Contributions Welcome!","Join our community","Let's connect the people!"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+</html>

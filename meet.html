@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MeetSpot: Schedule meeting</title>
+        <meta charset="utf-8">
+        <meta name="author" content="K.Sasikalyan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+        <script src="https://meet.jit.si/external_api.js"></script>
+    </head>
+    <body class="meet-head">
+        <!--<h1>Welcome to Spaces!</h1>
+        <button id="start" type="start">Create Meeting</button>
+        <br>
+        <button id="start" type="button" onclick="window.location.href='index.html'">Home</button>-->
+        <h1>Welcome to MeetSpot</h1>
+        <p>Our Community introducing the MeetSpot. MeetSpot is a community-driven platform that allows people to easily organize meetings and share information globally. It aims to improve international relations, quality of life, and combat societal issues. MeetSpot is the fastest way to schedule meetings and events, offering professional scheduling meetings openly. MeetingSpot is opensource, secure, and offers privacy and security through jitsi APIs.
+        </p>
+        <button id="start" type="start">Start Meeting</button>
+        <br>
+        <button id="start" type="button" onclick="window.location.href='index.html'">Home</button>
+
+        <div id="jitsi-container"></div>
+        <div id="dev">
+            <p>Developed by <a href="#">@Sasikalyan.K</a></p>
+        </div>
+        <script>
+            var button = document.querySelector('#start');
+            var container = document.querySelector('#jitsi-container');
+            var api = null;
+
+            button.addEventListener('click', () => {
+                var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                var stringLength = 30;
+                function pickRandom () {
+                    return possible[Math.floor() * possible.length];
+                }
+                var randomString = Array.apply(null,Array(stringLength)).map (pickRandom).join('');
+
+                var domain = "meet.jit.si";
+                var options = {
+                    "roomName": randomString,
+                    "parentNode": container,
+                    "width": 800,
+                    "height": 500,
+                };
+                api = new JitsiMeetExternalAPI(domain, options);
+             });
+        </script>
+        
+    </body>
+</html>
